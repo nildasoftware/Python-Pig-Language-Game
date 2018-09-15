@@ -1,0 +1,16 @@
+# pig language letters to be inserted at end of any word
+pyg = 'ay'
+
+# Asks user to input any word and stores it inside original
+original = raw_input('Enter a word: ')
+
+# After user inputs any word this if statement assures that
+# user is entering only letters and will print users' word and adds letters 'ay' at the end
+if len(original) > 0 and original.isalpha():
+  print original
+  word = original.lower()
+  first = word[0]
+  new_word = word + first + pyg
+  print new_word[1:len(new_word)]
+else:
+  print 'Please try again, enter only letters make sure there are no numbers or other characters'
